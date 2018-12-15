@@ -1,0 +1,13 @@
+[credential]
+	helper = osxkeychain
+[user]
+	name = Steven Suh
+	email = stevenesuh@gmail.com
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	rb = rebase
+	p = push
+	ol = log --stat --oneline
