@@ -11,12 +11,15 @@ cnoreabbrev files Files
 syntax on
 
 set t_Co=256
-set background=dark
-colorscheme PaperColor
-autocmd VimEnter * highlight VertSplit ctermbg=black ctermfg=black
-autocmd VimEnter * highlight Normal ctermbg=NONE
+" set background=dark
+" colorscheme PaperColor
+autocmd VimEnter * highlight VertSplit ctermbg=NONE ctermfg=NONE
+autocmd VimEnter * highlight Normal ctermbg=NONE guibg=NONE
 autocmd VimEnter * highlight nonText ctermbg=NONE
 autocmd VimEnter * highlight Search cterm=NONE ctermfg=white ctermbg=darkblue
+autocmd VimEnter * highlight TabLine ctermfg=NONE ctermbg=NONE
+autocmd VimEnter * highlight TabLineFill guifg=NONE guibg=NONE ctermfg=NONE ctermbg=NONE
+autocmd VimEnter * highlight TabLineSel ctermfg=NONE ctermbg=NONE
 
 set fillchars+=vert:\ 
 set writebackup
