@@ -9,6 +9,8 @@ cnoreabbrev rg Rg
 cnoreabbrev files Files
 
 syntax on
+autocmd VimEnter * GitGutterEnable
+set updatetime=100
 
 set t_Co=256
 " set background=dark
