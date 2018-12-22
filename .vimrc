@@ -7,6 +7,7 @@ let &t_EI="\<Esc>]50;CursorShape=2\x7"
 cnoreabbrev ag Ag
 cnoreabbrev rg Rg
 cnoreabbrev files Files
+cnoreabbrev tn tabnew
 
 syntax on
 autocmd VimEnter * GitGutterEnable
