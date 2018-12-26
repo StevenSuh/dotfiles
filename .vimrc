@@ -1,3 +1,4 @@
+
 execute pathogen#infect()
 
 let &t_SI="\<Esc>]50;CursorShape=1\x7"
@@ -52,7 +53,7 @@ autocmd bufenter * if (winnr("$") == 1 && ((exists("b:NERDTree") && b:NERDTree.i
 
 let blacklistFiletypes = ['make']
 autocmd VimEnter * if index(blacklistFiletypes, &ft) < 0 | set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
-
+autocmd BufWritePost * if @% == 'update.files.sh' || @% == '.vimrc' || @% == '.zshrc' || @% == '.gitconfig' | !~/./update.files.sh
 
 set runtimepath+=~/.vim_runtime
 set runtimepath+=/usr/local/opt/fzf
