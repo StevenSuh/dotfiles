@@ -53,6 +53,7 @@ autocmd bufenter * if (winnr("$") == 1 && ((exists("b:NERDTree") && b:NERDTree.i
 
 let blacklistFiletypes = ['make']
 autocmd VimEnter * if index(blacklistFiletypes, &ft) < 0 | set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+autocmd BufWritePost * if @% == 'update.files.sh' || @% == '.vimrc' || @% == '.zshrc' || @% == '.gitconfig' | !~/./update.files.sh
 
 set runtimepath+=~/.vim_runtime
 set runtimepath+=/usr/local/opt/fzf
@@ -62,3 +63,23 @@ source ~/.vim_runtime/vimrcs/filetypes.vim
 source ~/.vim_runtime/vimrcs/plugins_config.vim
 source ~/.vim_runtime/vimrcs/extended.vim
 
+try
+source ~/.vim_runtime/my_configs.vim
+catch
+endtry
+
+" lightline
+set noshowmode
+let g:lightline = {
+    \ 'colorscheme': 'one',
+    \ }
+let s:palette = g:lightline#colorscheme#one#palette
+
+let s:palette.normal.middle = [ [ 'NONE', 'NONE', 'NONE', 'NONE' ] ]
+let s:palette.inactive.middle = [ [ 'NONE', 'NONE', 'NONE', 'NONE' ] ]
+
+let s:palette.tabline.middle = [ [ 'NONE', 'NONE', 'NONE', 'NONE' ] ]
+let s:palette.tabline.left = [ [ 'NONE', 'NONE', 'NONE', 'NONE' ] ]
+let s:palette.tabline.right = [ [ 'NONE', 'NONE', 'NONE', 'NONE' ] ]
+let s:palette.tabline.tabsel = [ [ '#282c34', '#61afef', 235, 75, 'bold' ] ]
+unlet s:palette
