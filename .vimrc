@@ -14,9 +14,6 @@ syntax on
 autocmd VimEnter * GitGutterEnable
 set updatetime=100
 
-set t_Co=256
-" set background=dark
-" colorscheme PaperColor
 autocmd VimEnter * highlight VertSplit ctermbg=NONE ctermfg=NONE
 autocmd VimEnter * highlight Normal ctermbg=NONE guibg=NONE
 autocmd VimEnter * highlight nonText ctermbg=NONE
