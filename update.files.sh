@@ -8,6 +8,7 @@ gp() {
 cp ~/update.files.sh ~/Dotfiles/
 cp ~/.gitconfig ~/Dotfiles/
 cp -r ~/.vim ~/Dotfiles/
+cp -r ~/.vim_runtime ~/Dotfiles/
 cp ~/.vimrc ~/Dotfiles/
 cp ~/.zshrc ~/Dotfiles/
 
