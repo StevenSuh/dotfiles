@@ -13,5 +13,6 @@ cp ~/.vimrc ~/Dotfiles/
 cp ~/.zshrc ~/Dotfiles/
 
 cd ~/Dotfiles/
+sudo chmod -R 755 ~/Dotfiles
 gp update dotfiles
 cd $current_dir
