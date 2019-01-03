@@ -37,7 +37,7 @@ set smartindent
 set autoindent
 set mouse=a
 set cursorline
-hi CursorLine term=bold cterm=bold
+hi CursorLine term=bold cterm=bold ctermbg=NONE ctermfg=NONE
 autocmd VimEnter * set clipboard=unnamed
 
 nnoremap o o<Esc>
