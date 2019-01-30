@@ -130,6 +130,7 @@ gnp() {
 alias ls='exa -1 -s type'
 
 alias cls="clear && printf '\e[3J'"
+alias myip="ifconfig | grep 'enf0' | grep 'inet'"
 
 autoload -U promptinit; promptinit
 prompt pure
