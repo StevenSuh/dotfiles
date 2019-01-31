@@ -11,3 +11,5 @@
 	rb = rebase
 	p = push
 	ol = log --stat --oneline
+[core]
+	pager = diff-so-fancy | less
