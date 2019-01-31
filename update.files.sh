@@ -11,6 +11,7 @@ cp -r ~/.vim ~/Dotfiles/
 cp -r ~/.vim_runtime ~/Dotfiles/
 cp ~/.vimrc ~/Dotfiles/
 cp ~/.zshrc ~/Dotfiles/
+cp ~/Library/Preferences/come.googlecode.iterm2.plist ~/Dotfiles/
 
 cd ~/Dotfiles/
 sudo chmod -R 755 ~/Dotfiles
