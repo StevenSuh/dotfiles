@@ -126,11 +126,16 @@ gnp() {
   git add -A && git ci -m "$message"
 }
 
+export PATH="$PATH:$(yarn global bin)"
+
 # alias ls='colorls -1 --gs --light --sort-dirs'
 alias ls='exa -1 -s type'
 
 alias cls="clear && printf '\e[3J'"
 alias myip="ifconfig en0 | grep 'inet '"
+
+export NVM_DIR=~/.nvm
+source ~/.nvm/nvm.sh
 
 autoload -U promptinit; promptinit
 prompt pure

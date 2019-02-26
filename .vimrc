@@ -73,6 +73,13 @@ endtry
 " lightline
 set noshowmode
 let g:lightline = {
+    \ 'active': {
+    \   'left': [ [ 'mode', 'paste' ],
+    \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+    \ },
+    \ 'component_function': {
+    \   'gitbranch': 'gitbranch#name',
+    \ },
     \ 'colorscheme': 'one',
     \ }
 let s:palette = g:lightline#colorscheme#one#palette
