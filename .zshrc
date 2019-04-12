@@ -113,6 +113,9 @@ source $ZSH/oh-my-zsh.sh
 #   fi
 # }
 
+# to make facebook infer work
+export SDKROOT=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+
 alias fr="git add -A && git commit -m 'ddd' && git rebase -i HEAD~2"
 
 gitPush() {
@@ -134,15 +137,14 @@ alias ls='exa -1 -s type'
 alias cls="clear && printf '\e[3J'"
 alias myip="ifconfig en0 | grep 'inet '"
 
-export NVM_DIR=~/.nvm
-source ~/.nvm/nvm.sh
+# export NVM_DIR=~/.nvm
+# source ~/.nvm/nvm.sh
 
 autoload -U promptinit; promptinit
 prompt pure
 
-
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/stevenesuh/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/stevenesuh/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/stevenesuh/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/stevenesuh/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/stevenesuh/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/stevenesuh/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/stevenesuh/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/stevenesuh/google-cloud-sdk/completion.zsh.inc'; fi
