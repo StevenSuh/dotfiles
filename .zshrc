@@ -140,6 +140,9 @@ alias myip="ifconfig en0 | grep 'inet '"
 # export NVM_DIR=~/.nvm
 # source ~/.nvm/nvm.sh
 
+alias python=python3
+alias pip=pip3
+
 autoload -U promptinit; promptinit
 prompt pure
 
