@@ -77,7 +77,11 @@ plugins=(
 )
 
 bindkey '\t' forward-word
-ZSH_AUTOSUGGEST_ACCEPT_WIDGETS+=(forward-word)
+ZSH_AUTOSUGGEST_ACCEPT_WIDGETS=(
+  forward-char
+  forward-word
+  expand-or-complete-with-dots
+)
 
 source $ZSH/oh-my-zsh.sh
 
