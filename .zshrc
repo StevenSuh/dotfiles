@@ -76,6 +76,9 @@ plugins=(
   zsh-autosuggestions
 )
 
+bindkey '\t' forward-word
+ZSH_AUTOSUGGEST_ACCEPT_WIDGETS+=(forward-word)
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
