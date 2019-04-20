@@ -78,8 +78,8 @@ plugins=(
 
 bindkey '\t' forward-word
 ZSH_AUTOSUGGEST_ACCEPT_WIDGETS=(
-  forward-char
   forward-word
+  forward-char
   expand-or-complete-with-dots
 )
 
