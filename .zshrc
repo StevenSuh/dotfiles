@@ -140,6 +140,9 @@ alias myip="ifconfig en0 | grep 'inet '"
 # export NVM_DIR=~/.nvm
 # source ~/.nvm/nvm.sh
 
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
 alias python=python3
 alias pip=pip3
 
