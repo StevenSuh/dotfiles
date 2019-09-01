@@ -129,8 +129,6 @@ gnp() {
   git add -A && git ci -m "$message"
 }
 
-export PATH="$PATH:$(yarn global bin)"
-
 # alias ls='colorls -1 --gs --light --sort-dirs'
 alias ls='exa -1 -s type'
 
