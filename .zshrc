@@ -140,6 +140,7 @@ alias myip="ifconfig en0 | grep 'inet '"
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export PATH=$PATH:~/Library/Android/sdk/platform-tools
 
 alias python=python3
 alias pip=pip3
