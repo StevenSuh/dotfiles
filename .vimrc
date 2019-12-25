@@ -46,6 +46,19 @@ nnoremap tt <C-w>w
 
 nnoremap <S-w> dw
 
+" insert mode
+noremap h i
+
+" left
+noremap l l
+" right
+noremap j h
+" up
+noremap i k
+" down
+noremap k j
+
+
 autocmd VimEnter * let g:NERDTreeWinSize=25
 " autocmd VimEnter * NERDTree
 " autocmd VimEnter * wincmd r
