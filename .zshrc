@@ -58,3 +58,5 @@ export PATH="$PATH:/Users/stevenesuh/workspace/pkgs/flutter/bin"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export NODE_PATH=/usr/local/bin/node_modules
