@@ -1,6 +1,6 @@
-[user]
-	name = Steven Suh
-	email = stevenesuh@gmail.com
+[config]
+  name = Steven Suh
+  email = stevenesuh@gmail.com
 [alias]
 	co = checkout
 	br = branch
@@ -13,3 +13,6 @@
 	pager = diff-so-fancy | less
 [credential]
 	helper = store
+[user]
+	name = Steven Suh
+	email = stevenesuh@gmail.com
