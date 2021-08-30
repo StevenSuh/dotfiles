@@ -2,7 +2,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export ZSH="/Users/stevenesuh/.oh-my-zsh"
+export ZSH="/Users/$USER/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(
   git
@@ -45,13 +45,13 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 # prompt pure
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/stevenesuh/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/stevenesuh/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/$USER/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/$USER/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/stevenesuh/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/stevenesuh/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/$USER/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/$USER/google-cloud-sdk/completion.zsh.inc'; fi
 
 # Flutter
-export PATH="$PATH:/Users/stevenesuh/workspace/pkgs/flutter/bin"
+export PATH="$PATH:/Users/$USER/workspace/pkgs/flutter/bin"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
