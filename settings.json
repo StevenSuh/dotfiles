@@ -1,0 +1,20 @@
+{
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["i"],
+            "after": ["k"]
+        },
+        {
+            "before": ["h"],
+            "after": ["i"]
+        },
+        {
+            "before": ["k"],
+            "after": ["j"]
+        },
+        {
+            "before": ["j"],
+            "after": ["h"]
+        }
+    ]
+}
