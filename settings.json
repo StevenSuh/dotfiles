@@ -16,5 +16,8 @@
             "before": ["j"],
             "after": ["h"]
         }
-    ]
+    ],
+    "vim.handleKeys": {
+        "<C-p>": false
+    }
 }
