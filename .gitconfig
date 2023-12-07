@@ -16,3 +16,5 @@
 [user]
 	name = Steven Suh
 	email = stevenesuh@gmail.com
+[push]
+	default = current
