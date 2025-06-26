@@ -30,9 +30,12 @@ set writebackup
 set nobackup
 set ruler
 set showcmd
+set hlsearch
 set incsearch
 set number
 set laststatus=2
+set ignorecase
+set smartcase
 set smartindent
 set autoindent
 set mouse=a
