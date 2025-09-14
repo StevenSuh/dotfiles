@@ -7,8 +7,6 @@ plugins=(
 )
 source $ZSH/oh-my-zsh.sh
 
-alias ls='exa -1 -s type'
-
 alias cls="clear && printf '\e[3J'"
 alias myip="ifconfig en0 | grep 'inet '"
 
