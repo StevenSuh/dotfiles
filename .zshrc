@@ -44,5 +44,23 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
+function auto_venv() {
+  if [[ -z "$VIRTUAL_ENV" ]]; then
+    if [[ -d ./venv ]]; then
+      source ./venv/bin/activate
+    elif [[ -d ./.venv ]]; then
+      source ./.venv/bin/activate
+    fi
+  else
+    parent_dir="$(dirname "$VIRTUAL_ENV")"
+    if [[ "$PWD"/ != "$parent_dir"/* ]]; then
+      deactivate
+    fi
+  fi
+}
+
+add-zsh-hook chpwd auto_venv
+auto_venv
+
 # theme
 eval "$(starship init zsh)"
