@@ -11,6 +11,7 @@
 	ol = log --stat --oneline
 [core]
 	pager = less
+    editor = vim
 [credential]
 	helper = store
 [user]
